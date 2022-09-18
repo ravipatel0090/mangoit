@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular expression</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+   <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <center class="container">
+        <h1> Registration Form</h1>
+        <form name="forms">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="fname">First Name:</label>
+                        <input type="text" placeholder="Firstname" id="fname" name="fname" class="form-control">
+                        
+                        <span id="error"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lname">Last Name:</label>
+                        <input type="text" placeholder="Lastname" id="lname" class="form-control">
+                        
+                        <span id="lasterror"></span>
+
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="username@gmail.com" id="email" class="form-control">
+                        
+                        <span id="emailerror"></span>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="uname">User Name:</label>
+                        <input type="text" placeholder="username" id="uname" class="form-control">
+                        
+                        <span id="usererror"></span>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="pass">Password:</label>
+                        <input type="text" placeholder="Password" id="pass" name="password1" class="form-control">
+                        
+                        <span id="passerror"></span>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="cpass">Confirm Password:</label>
+                        <input type="text" placeholder="Confirm Password" id="cpass" name="password2" class="form-control">
+                        
+                        <span id="cpasserror"></span>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="url">URL:</label>
+                        <input type="url" placeholder="Enter Url" id="url" class="form-control">
+                        
+                        <span id="urlerror"></span>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <label for="">Gender:</label>
+                      <input id="male" type="radio" value="Male" name="gender" />Male
+                     <input id="female" type="radio" value="Female" name="gender" />Female
+                        <span id="gendererror" class="error"></span>
+                    </div>
+                    <br>
+                    <div class="col-md-12  hoby">
+                        <label for="">Hobbies:</label>
+                        Playing Cricket <input type="checkbox" name="hoby" value=" Playing Cricket " class="form-control"> 
+                        Learn new things <input type="checkbox" name="hoby" value="  Learn new things " class="form-control"> 
+                        Listen music <input type="checkbox" name="hoby" value="Listen music" class="form-control">
+                        Football <input type="checkbox" name="hoby" value="Football" class="form-control"> 
+                        Cycling <input type="checkbox" name="hoby" value="Cycling" class="form-control">
+                        <span id="hobyerror"></span>
+                    </div>
+                    
+                   
+                </div>
+             <div><input id="submitbutton" type="button" onclick="validate()"  value="create">
+                    </div>
+        </form>
+    </center>
+</body>
+
+<script src="./regex.js"></script>
+
+</html>
